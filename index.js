@@ -4,7 +4,7 @@ const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 
 // Add form submit event listener
-searchForm.addEventListener('search', handleFormSubmit);
+searchForm.addEventListener('submit', handleFormSubmit);
 
 // Function to handle form submission
 function handleFormSubmit(event) {
