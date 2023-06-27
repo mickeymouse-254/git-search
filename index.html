@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub User Search</title>
+  <style>
+
+    #searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust the margin-top value as needed */
+}
+
+#searchInput {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#searchForm Button {
+  font-size: 40px;
+  width: 150px;
+  height: 40px;
+  padding: auto;
+}
+
+#search Title {
+  display: inline-block;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+    h1 {
+      text-align: center;
+      font-size: 80px;
+      margin-top: 200px;
+    }
+    body {
+      background-image: url(https://images.unsplash.com/photo-1587059481645-b3a17becd6e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80);
+      background-size: 1920px 1800px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .user {
+      font-size: 40px;
+      margin-top: 100px;
+      margin-bottom: 40px;
+      color:black ;
+    }
+    .user img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .repositories {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>GitHub User Search</h1>
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Enter username" style="font-size: 37px;">
+    <button type="submit" id="searchButton"><span id="searchTitle">Search</span></button>
+  </form>
+  <div id="searchResults"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
